@@ -32,12 +32,14 @@
   .search-bar {
     flex-grow: 1;
     display: flex;
+    align-items: center; /* Align items vertically */
   }
   .search-input {
     flex-grow: 1;
     padding: 8px;
     border: none;
     border-radius: 5px;
+    margin-right: 10px;
   }
   .search-btn {
     padding: 8px 15px;
@@ -46,7 +48,6 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 10px;
   }
   .navigation-tabs {
     display: flex;
@@ -118,7 +119,8 @@
   <!-- Navigation Bar -->
   <div class="navbar">
     <div class="search-bar">
-      <input type="text" class="search-input" placeholder="Search...">
+      <label for="search-input">Search:</label> <!-- Add label for search input -->
+      <input type="text" id="search-input" class="search-input" placeholder="Enter search term...">
       <button class="search-btn">Search</button>
     </div>
     <div class="navigation-tabs">
@@ -224,3 +226,4 @@
 </script>
 </body>
 </html>
+
